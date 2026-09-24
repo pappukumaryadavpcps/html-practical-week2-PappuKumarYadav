@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Pappu Kumar Yadav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="brand">Pappu Kumar Yadav</p>
+    <nav aria-label="Main navigation"><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul></nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+    <section aria-labelledby="form">
+      <h2 id="form">Send a message</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>Project idea</option>
+          <option>Collaboration</option>
+          <option>Just saying hi</option>
+        </select>
+
+        <fieldset>
+          <legend>Preferred reply</legend>
+          <input type="radio" id="r-email" name="reply" value="email" checked><label for="r-email">Email</label>
+          <input type="radio" id="r-phone" name="reply" value="phone"><label for="r-phone">Phone</label>
+        </fieldset>
+
+        <label for="msg">Message</label>
+        <textarea id="msg" name="msg" rows="5" required></textarea>
+
+        <p><button class="btn" type="submit">Send message</button></p>
+      </form>
+    </section>
+
+    <section aria-labelledby="find">
+      <h2 id="find">Find me</h2>
+      <address>
+        PCPS, Kathmandu, Nepal<br>
+        <a href="mailto:you@example.com">you@example.com</a>
+      </address>
+      <iframe height="320" title="Map of Kathmandu" src="https://www.openstreetmap.org/export/embed.html?bbox=85.28%2C27.66%2C85.36%2C27.74&amp;layer=mapnik"></iframe>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Pappu Kumar Yadav. Built with HTML for Week 2, Task 9.</p>
+  </footer>
+</body>
+</html>
